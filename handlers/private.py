@@ -21,14 +21,14 @@ async def start(_, message: Message):
                         "💖stickers", url="t.me/stickersbag")
                   ],[
                     InlineKeyboardButton(
-                        "Sᴜᴩᴩᴏʀᴛ👿", url="https://t.me/warbotzchat"
+                        "sᴜᴘᴘᴏʀᴛ👿", url="https://t.me/warbotzchat"
                     ),
                     InlineKeyboardButton(
-                        "Cʜᴀɴɴᴇʟ", url="https://t.me/warbotz"
+                        "ᴄʜᴀɴɴᴇʟ", url="https://t.me/warbotz"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Gʀᴏᴜᴩ Mᴇ ᴅᴀʟᴅᴏ➕", url="https://t.me/camillamusicbot?startgroup=true"
+                        "➕ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/camillamusicbot?startgroup=true"
                     )]
             ]
         ),

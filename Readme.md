@@ -4,7 +4,7 @@ The easiest way to deploy this Bot
 
 Get STRING_NAME from here:
 
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-brown)
+[![GenerateString](https://img.shields.io/badge/repl.it-generateString-brown)](https://replit.com/@warlegend/WarbotZ#main.p)
 
 ### Mandatory Vars.
 

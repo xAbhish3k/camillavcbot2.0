@@ -40,7 +40,8 @@ Get STRING_NAME from here:
 
 *   [Abhishek](https://telegram.dog/itsmelegend)
 
-## Our Telegram Channel and Group
+*. [Lucifer](https://t.me/lmlucifer)
+
 
 
 

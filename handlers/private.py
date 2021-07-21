@@ -21,7 +21,7 @@ async def start(_, message: Message):
                         "💖stickers", url="t.me/stickersbag")
                   ],[
                     InlineKeyboardButton(
-                        "sᴜᴘᴘᴏʀᴛ👿", url="https://t.me/warbotzchat"
+                        "sᴜᴘᴘᴏʀᴛ👿", url="https://t.me/camila_support"
                     ),
                     InlineKeyboardButton(
                         "ᴄʜᴀɴɴᴇʟ", url="https://t.me/warbotz"

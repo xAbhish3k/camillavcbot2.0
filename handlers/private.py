@@ -11,7 +11,7 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""**Hey, I'm {bn} 🎀
 ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ  ɢʀᴏᴜᴩ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ. 
-ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ ғʀᴇᴇʟʏ 🤗 Developed By [ᴡᴀʀʙᴏᴛᴢ](https://t.me/warbotZ) !**
+ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ ғʀᴇᴇʟʏ 🤗 Developed By [ᴡᴀʀʙᴏᴛᴢ](https://t.me/thewarbotZ) !**
 
         """,
         reply_markup=InlineKeyboardMarkup(
@@ -21,10 +21,10 @@ async def start(_, message: Message):
                         "💖stickers", url="t.me/stickersbag")
                   ],[
                     InlineKeyboardButton(
-                        "sᴜᴘᴘᴏʀᴛ👿", url="https://t.me/camila_support"
+                        "sᴜᴘᴘᴏʀᴛ👿", url="https://t.me/warbotzsupport"
                     ),
                     InlineKeyboardButton(
-                        "ᴄʜᴀɴɴᴇʟ", url="https://t.me/warbotz"
+                        "ᴄʜᴀɴɴᴇʟ", url="https://t.me/thewarbotz"
                     )
                 ],[ 
                     InlineKeyboardButton(
@@ -42,7 +42,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊Uᴩᴅᴀᴛᴇs", url="https://t.me/warbotz")
+                        "🔊Uᴩᴅᴀᴛᴇs", url="https://t.me/thewarbotz")
                 ]
             ]
         )

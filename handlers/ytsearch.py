@@ -22,7 +22,7 @@ async def ytsearch(_, message: Message):
         if len(message.command) < 2:
             await message.reply_text("/search needs an argument!")
             return
-        query = message.text.split(True, 1)[1]
+        query = message.text.split(Enable, 1)[1]
         m = await message.reply_text("Searching....")
         results = YoutubeSearch(query, max_results=4).to_dict()
         i = 0

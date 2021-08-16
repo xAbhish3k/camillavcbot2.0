@@ -92,7 +92,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                    & ~filters.via_bot)
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Processing...**")
+    lel = await message.reply(" 🎶 **Processing bass**")
     
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -100,7 +100,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "Camila Music"
+        user.first_name = "Amala Music"
     usar = user
     wew = usar.id
     try:
@@ -118,18 +118,18 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**camila Music assistant joined this group for play music 🎵**")
+                        message.chat.id, "**Amala assistant joined this group for play music 🎵**")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await lel.edit(
-                        f"<b>🛑 Flood Wait Error 🛑</b> \n\Hey {user.first_name},@camilaowner assistant userbot couldn't join your group due to heavy join requests @camila_support. Make sure userbot is not banned in group and try again later!")
+                        f"<b>🛑 Flood Wait Error 🛑</b> \n\Hey {user.first_name},@amalavc assistant userbot couldn't join your group due to heavy join requests @kittysupport. Make sure userbot is not banned in group and try again later!")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>Hey {user.first_name}, @camilaowner assistant userbot is not in this chat, ask admin to send /play command for first time to add it.</i>")
+            f"<i>Hey {user.first_name}, @amalavc assistant userbot is not in this chat, ask admin to send /play command for first time to add it.</i>")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
@@ -152,8 +152,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Channel 🔊",
-                        url="https://t.me/warbotz")
+                        text="Group❤️",
+                        url="https://t.me/kittysupport")
                    
                 ]
             ]
@@ -223,10 +223,10 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit("🧐 **What's the song you want to play?**")
-        await lel.edit("🔎 **Finding the song...**")
+        await lel.edit(" 🥳 **Finding your song...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🎵 **Processing sounds...**")
+        await lel.edit("🎵 **Prossessing vc music ...**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -264,7 +264,11 @@ async def play(_, message: Message):
                             text="Download 📥",
                             url=f"{durl}")
 
-                    ]
+                    ],[
+                        InlineKeyboardButton(
+                            text="AmalaSupport🥰",
+                            url="t.me/kittysupport")
+                        ]
                 ]
             )
         

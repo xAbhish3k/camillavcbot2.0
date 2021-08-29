@@ -16,17 +16,17 @@ async def start(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔨Source Code🔨", url="https://github.com/War-Legend/camillavcbot2.0")
+                        "🔨Owner", url="https://t.me/ALWAYS_SHIVAMOP")
                   ],[
                     InlineKeyboardButton(
-                        "sᴜᴘᴘᴏʀᴛ👿", url="https://t.me/warbotzsupport"
+                        "sᴜᴘᴘᴏʀᴛ👿", url="https://t.me/BONDOFBESTIZZ"
                     ),
                     InlineKeyboardButton(
-                        "ᴄʜᴀɴɴᴇʟ", url="https://t.me/thewarbotz"
+                        "ᴄʜᴀɴɴᴇʟ", url="https://t.me/INCREDIBLE_SPAM_BOT"
                     )    
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/camillamusicbot?startgroup=true"
+                        "➕ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/BESTIES_ROBOT?startgroup=true"
                     )]
             ]
         ),
@@ -40,7 +40,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊Uᴩᴅᴀᴛᴇs", url="https://t.me/thewarbotz")
+                        "🔊Uᴩᴅᴀᴛᴇs", url="https://t.me/BONDOFBESTIZZ")
                 ]
             ]
         )

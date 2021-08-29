@@ -7,7 +7,7 @@ import aiohttp
 import regex
 from pyrogram import Client, filters
 from pyrogram.errors import UserAlreadyParticipant
-from camillavcbot2.0.config import SUDO_USERS, BOT_TOKEN
+from config import SUDO_USERS, BOT_TOKEN
 from aiohttp import ClientSession
 from pyrogram.types import Message
 

@@ -7,11 +7,10 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_image("https://telegra.ph/file/ceb11481778ad291c03df.jpg")
+    await message.reply_text("https://telegra.ph/file/ceb11481778ad291c03df.jpg")
     await message.reply_text(
         f"""**Hey, I'm {bn} 🎀
-ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ  ɢʀᴏᴜᴩ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ. 
-ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ ғʀᴇᴇʟʏ 🤗 Developed By [ᴡᴀʀʙᴏᴛᴢ](https://t.me/thewarbotZ) !**
+🤖 I am an advanced bot created for playing music in the voice chats of Telegram Groups & Channels. !**
 
         """,
         reply_markup=InlineKeyboardMarkup(

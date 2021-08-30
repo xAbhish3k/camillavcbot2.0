@@ -15,7 +15,7 @@ async def help_(client: Client, message: Message):
 
 Commands of Besties Vc Bot 🔥🛠
 
-- /play <song name> - play song you requested 
+/play <song name> - play song you requested 
 
 - /song <song name> - download songs you want quickly 
 

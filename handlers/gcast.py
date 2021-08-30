@@ -1,15 +1,7 @@
-import asyncio
-import html
-import os
-import re
-import sys
-import aiohttp
-import regex
 from pyrogram import Client, filters
 from pyrogram.errors import UserAlreadyParticipant
-from config import SUDO_USERS, BOT_TOKEN
-from aiohttp import ClientSession
-from pyrogram.types import Message
+import asyncio
+from config import SUDO_USERS
 
 @Client.on_message(filters.command(["gcast"]))
 async def bye(client, message):
@@ -31,6 +23,3 @@ async def bye(client, message):
                 await lol.edit(f"Gcasting.. Sent: {sent} chats. Failed: {failed} chats.")
             await asyncio.sleep(3)
         await message.reply_text(f"Gcasted message to {sent} chats. Failed {failed} chats.")
-
-        
-

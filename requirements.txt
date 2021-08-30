@@ -13,3 +13,9 @@ search_engine_parser
 ffmpeg
 Pillow
 ujson
+requests
+python-arq
+future
+psutil
+wget
+regex

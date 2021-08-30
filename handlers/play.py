@@ -153,7 +153,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                         text="Channel 🔊",
-                        url="https://t.me/warbotz")
+                        url="https://t.me/BONDOFBESTIZZ")
                    
                 ]
             ]
@@ -187,33 +187,30 @@ async def play(_, message: Message):
                 secmul *= 60
                 
             keyboard = InlineKeyboardMarkup(
+            [
                 [
-                    [
-                        InlineKeyboardButton(
-                            text="YouTube 🎬",
-                            url=f"{url}"),
-                        InlineKeyboardButton(
-                            text="Download 📥",
-                            url=f"{durl}")
-
-                    ]
+                    InlineKeyboardButton(
+                        text="Channel 🔊",
+                        url="https://t.me/BONDOFBESTIZZ")
+                   
                 ]
-            )
+            ]
+        )
         except Exception as e:
             title = "NaN"
             thumb_name = "https://telegra.ph/file/5b2ed5398e7cc024c8838.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton(
-                                text="YouTube 🎬",
-                                url=f"https://youtube.com")
-
-                        ]
-                    ]
-                )
+            [
+                [
+                    InlineKeyboardButton(
+                        text="Channel 🔊",
+                        url="https://t.me/BONDOFBESTIZZ")
+                   
+                ]
+            ]
+        )
         if (dur / 60) > DURATION_LIMIT:
              await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")
              return
@@ -255,18 +252,15 @@ async def play(_, message: Message):
             return
 
         keyboard = InlineKeyboardMarkup(
+            [
                 [
-                    [
-                        InlineKeyboardButton(
-                            text="YouTube 🎬",
-                            url=f"{url}"),
-                        InlineKeyboardButton(
-                            text="Download 📥",
-                            url=f"{durl}")
-
-                    ]
+                    InlineKeyboardButton(
+                        text="Channel 🔊",
+                        url="https://t.me/BONDOFBESTIZZ")
+                   
                 ]
-            )
+            ]
+        )
         
         if (dur / 60) > DURATION_LIMIT:
              await lel.edit(f"❌ Videos longer than {DURATION_LIMIT} minutes aren't allowed to play!")

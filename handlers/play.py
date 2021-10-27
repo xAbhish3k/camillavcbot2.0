@@ -92,7 +92,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                    & ~filters.via_bot)
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Processing...**")
+    lel = await message.reply("🕵️ **चला रहा हूं**")
     
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -118,18 +118,18 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**camila Music assistant joined this group for play music 🎵**")
+                        message.chat.id, "**crepan assistant इस ग्रुप में गाने चलाने के लिए आ गया है 🙂**")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await lel.edit(
-                        f"<b>🛑 Flood Wait Error 🛑</b> \n\Hey {user.first_name},@camilaassistant userbot couldn't join your group due to heavy join requests @warbotzsupport. Make sure userbot is not banned in group and try again later!")
+                        f"<b>🛑 Flood Wait Error 🛑</b> \n\Hey {user.first_name},@CrepanAssistant userbot couldn't join your group due to heavy join requests @CrepanSupport. Make sure userbot is not banned in group and try again later!")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>Hey {user.first_name}, @camilaassistant userbot is not in this chat, ask admin to send /play command for first time to add it.</i>")
+            f"<i>Hey {user.first_name}, @CrepanAssistant userbot is not in this chat, ask admin to send /play command for first time to add it.</i>")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
@@ -152,8 +152,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Channel 🔊",
-                        url="https://t.me/warbotz")
+                        text="Support",
+                        url="https://t.me/crepansupport")
                    
                 ]
             ]
@@ -190,11 +190,11 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="YouTube 🎬",
-                            url=f"{url}"),
+                            text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧",
+                            url=f"https://t.me/crepansupport"),
                         InlineKeyboardButton(
-                            text="Download 📥",
-                            url=f"{durl}")
+                            text="𝗢𝗪𝗡𝗘𝗥",
+                            url=f"https://t.me/crepan")
 
                     ]
                 ]
@@ -208,8 +208,8 @@ async def play(_, message: Message):
                     [
                         [
                             InlineKeyboardButton(
-                                text="YouTube 🎬",
-                                url=f"https://youtube.com")
+                                text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧",
+                                url=f"https://t.me/crepansupport")
 
                         ]
                     ]
@@ -222,11 +222,11 @@ async def play(_, message: Message):
         file_path = await converter.convert(youtube.download(url))
     else:
         if len(message.command) < 2:
-            return await lel.edit("🧐 **What's the song you want to play?**")
-        await lel.edit("🔎 **Finding the song...**")
+            return await lel.edit("😡 **क्या चलाना है, नाम तो डाल**")
+        await lel.edit("🔎 **देख रहा हूं...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🎵 **Processing sounds...**")
+        await lel.edit("🎵 **चला रहा हूं...**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -249,7 +249,7 @@ async def play(_, message: Message):
                 
         except Exception as e:
             await lel.edit(
-                "❌ Song not found.\n\nTry another song or maybe spell it properly."
+                "❌ Sorry नहीं मिला.\n\nTry another song or maybe spell it properly."
             )
             print(str(e))
             return
@@ -258,11 +258,11 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="YouTube 🎬",
-                            url=f"{url}"),
+                            text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧",
+                            url=f"https://t.me/crepansupport"),
                         InlineKeyboardButton(
-                            text="Download 📥",
-                            url=f"{durl}")
+                            text="𝗢𝗪𝗡𝗘𝗥",
+                            url=f"https://t.me/crepansupport")
 
                     ]
                 ]
@@ -279,7 +279,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png", 
-        caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:** {}\n\n**#⃣ Queued Position:** {}".format(
+        caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:**𝗖𝗿𝗲𝗽𝗮𝗻\n\n**#⃣ Queued Position:** {}".format(
         title, duration, message.from_user.mention(), position
         ),
         reply_markup=keyboard)
@@ -290,7 +290,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:** {}\n\n**▶️ Now Playing at `{}`...**".format(
+        caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:** 𝗖𝗿𝗲𝗽𝗮𝗻\n\n**▶️ Now Playing at `{}`...**".format(
         title, duration, message.from_user.mention(), message.chat.title
         ), )
         os.remove("final.png")

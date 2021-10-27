@@ -9,26 +9,27 @@ from helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAItmWD3OC0m03OLIcpSzfiJMCDxm4xJAAKFAwACH8C5V-U9VextES_XIAQ")
     await message.reply_text(
-        f"""**Hey, I'm {bn} 🎀
-ɪ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ  ɢʀᴏᴜᴩ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ. 
-ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ ᴀɴᴅ ᴘʟᴀʏ ᴍᴜsɪᴄ ғʀᴇᴇʟʏ Developed By [ᴡᴀʀʙᴏᴛᴢ](https://t.me/thewarbotZ) !**
+        f"""**Hey, में 𝗖𝗿𝗲𝗽𝗮𝗻 हूं 👨‍💻
+में आपके ɢʀᴏᴜᴩ में ᴍᴜsɪᴄ चला सकता हूं ।
+मुझे आपके ɢʀᴏᴜᴩ में ᴀᴅᴅ करके ॲडमीन बनाये और साथ ही साथ @CrepanAssistant को आपके ɢʀᴏᴜᴩ में ᴀᴅᴅ करें और अपने मनपसंद गाने चलाकर मज़े ले 😊 
+Pᴏᴡᴇʀᴇᴅ ʙʏ : [𝗖𝗥𝗘𝗔𝗧𝗢𝗥 𝗣𝗔𝗩𝗔𝗡](https://t.me/crepan) !**
 
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔨Source Code🔨", url="https://github.com/xabhish3k/camillavcbot2.0")
+                        "👨‍💻 𝗢𝗪𝗡𝗘𝗥 👨‍💻", url="https://t.me/crepan")
                   ],[
                     InlineKeyboardButton(
-                        "sᴜᴘᴘᴏʀᴛ👿", url="https://t.me/warbotzsupport"
+                        "sᴜᴘᴘᴏʀᴛ", url="https://t.me/crepansupport"
                     ),
                     InlineKeyboardButton(
-                        "ᴄʜᴀɴɴᴇʟ", url="https://t.me/thewarbotz"
+                        "ᴄʜᴀɴɴᴇʟ", url="https://t.me/crepansupport"
                     )    
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕", url="https://t.me/camillamusicbot?startgroup=true"
+                        "➕ɢʀᴏᴜᴩ में ᴀᴅᴅ करें➕", url="https://t.me/crepanMusicbot?startgroup=true"
                     )]
             ]
         ),
@@ -37,12 +38,12 @@ async def start(_, message: Message):
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**Yes iᴍ online ✅**""",
+      await message.reply_text("""**online ही हूं 😄**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊Uᴩᴅᴀᴛᴇs", url="https://t.me/thewarbotz")
+                        "👨‍💻 𝗢𝗪𝗡𝗘𝗥 👨‍💻", url="https://t.me/crepan")
                 ]
             ]
         )
